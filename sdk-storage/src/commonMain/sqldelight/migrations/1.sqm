@@ -1,0 +1,5 @@
+-- Migration 1: Initial baseline schema definition
+CREATE TABLE schema_meta (
+    version INTEGER PRIMARY KEY NOT NULL,
+    applied_at INTEGER NOT NULL
+);

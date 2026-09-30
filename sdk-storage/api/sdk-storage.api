@@ -1,7 +1,345 @@
+public final class com/ragchat/sdk/storage/Audit_log {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()J
+	public final fun component7 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)Lcom/ragchat/sdk/storage/Audit_log;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Audit_log;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/storage/Audit_log;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEvent_hash ()Ljava/lang/String;
+	public final fun getEvent_id ()Ljava/lang/String;
+	public final fun getEvent_type ()Ljava/lang/String;
+	public final fun getMetadata_json ()Ljava/lang/String;
+	public final fun getPrev_hash ()Ljava/lang/String;
+	public final fun getScope_id ()Ljava/lang/String;
+	public final fun getTimestamp ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/Chunk_fts {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/ragchat/sdk/storage/Chunk_fts;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Chunk_fts;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/storage/Chunk_fts;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChunk_id ()Ljava/lang/String;
+	public final fun getContent ()Ljava/lang/String;
+	public final fun getScope_id ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/Chunks {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()J
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()J
+	public final fun component7 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;)Lcom/ragchat/sdk/storage/Chunks;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Chunks;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/storage/Chunks;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChunk_index ()J
+	public final fun getContent ()Ljava/lang/String;
+	public final fun getDocument_id ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata_json ()Ljava/lang/String;
+	public final fun getScope_id ()Ljava/lang/String;
+	public final fun getToken_count ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/Collections {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJLjava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()J
+	public final fun component7 ()J
+	public final fun component8 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJLjava/lang/String;)Lcom/ragchat/sdk/storage/Collections;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Collections;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJLjava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/storage/Collections;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCreated_at ()J
+	public final fun getEmbedding_dimensions ()J
+	public final fun getEmbedding_model_id ()Ljava/lang/String;
+	public final fun getEmbedding_model_version ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata_json ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getScope_id ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/Documents {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/lang/String;
+	public final fun component7 ()Ljava/lang/String;
+	public final fun component8 ()J
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Lcom/ragchat/sdk/storage/Documents;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Documents;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lcom/ragchat/sdk/storage/Documents;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCollection_id ()Ljava/lang/String;
+	public final fun getContent ()Ljava/lang/String;
+	public final fun getCreated_at ()J
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata_json ()Ljava/lang/String;
+	public final fun getScope_id ()Ljava/lang/String;
+	public final fun getSource_uri ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/Embeddings {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;JD[B)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()J
+	public final fun component4 ()D
+	public final fun component5 ()[B
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;JD[B)Lcom/ragchat/sdk/storage/Embeddings;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Embeddings;Ljava/lang/String;Ljava/lang/String;JD[BILjava/lang/Object;)Lcom/ragchat/sdk/storage/Embeddings;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChunk_id ()Ljava/lang/String;
+	public final fun getDimensions ()J
+	public final fun getQuantized_data ()[B
+	public final fun getScale ()D
+	public final fun getScope_id ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
 public final class com/ragchat/sdk/storage/InMemoryDocumentStore : com/ragchat/sdk/api/DocumentStore {
 	public fun <init> ()V
 	public fun deleteDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public fun getDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 	public fun storeDocument (Lcom/ragchat/sdk/api/Document;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/storage/Ingestion_jobs {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;J)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()D
+	public final fun component6 ()Ljava/lang/String;
+	public final fun component7 ()J
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;J)Lcom/ragchat/sdk/storage/Ingestion_jobs;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Ingestion_jobs;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;JILjava/lang/Object;)Lcom/ragchat/sdk/storage/Ingestion_jobs;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDocument_id ()Ljava/lang/String;
+	public final fun getError_message ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getProgress ()D
+	public final fun getScope_id ()Ljava/lang/String;
+	public final fun getStatus ()Ljava/lang/String;
+	public final fun getUpdated_at ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/Quantization {
+	public static final field INSTANCE Lcom/ragchat/sdk/storage/Quantization;
+	public final fun dequantize ([BF)Ljava/util/List;
+	public final fun quantize (Ljava/util/List;)Lkotlin/Pair;
+}
+
+public final class com/ragchat/sdk/storage/RagChatQueries : app/cash/sqldelight/TransacterImpl {
+	public fun <init> (Lapp/cash/sqldelight/db/SqlDriver;)V
+	public final fun clearAuditScope (Ljava/lang/String;)V
+	public final fun clearEntireDatabase ()V
+	public final fun clearJobsScope (Ljava/lang/String;)V
+	public final fun clearScopeAll (Ljava/lang/String;)V
+	public final fun deleteChunk (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun deleteChunkFts (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun deleteCollection (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun deleteDocument (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun deleteDocumentChunksFts (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public final fun deleteEmbedding (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun getChunk (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun getChunk (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function7;)Lapp/cash/sqldelight/Query;
+	public final fun getCollection (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun getCollection (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function8;)Lapp/cash/sqldelight/Query;
+	public final fun getDocument (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun getDocument (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function8;)Lapp/cash/sqldelight/Query;
+	public final fun getEmbedding (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun getEmbedding (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function5;)Lapp/cash/sqldelight/Query;
+	public final fun getJob (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun getJob (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function7;)Lapp/cash/sqldelight/Query;
+	public final fun getLatestAuditLog (Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun getLatestAuditLog (Ljava/lang/String;Lkotlin/jvm/functions/Function7;)Lapp/cash/sqldelight/Query;
+	public final fun getSchemaMeta ()Lapp/cash/sqldelight/Query;
+	public final fun getSchemaMeta (Lkotlin/jvm/functions/Function2;)Lapp/cash/sqldelight/Query;
+	public final fun insertAuditLog (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)V
+	public final fun insertChunk (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;)V
+	public final fun insertChunkFts (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public final fun insertCollection (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJLjava/lang/String;)V
+	public final fun insertDocument (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
+	public final fun insertEmbedding (Ljava/lang/String;Ljava/lang/String;JD[B)V
+	public final fun insertJob (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;J)V
+	public final fun insertSchemaMeta (Ljava/lang/Long;J)V
+	public final fun listAuditLog (Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun listAuditLog (Ljava/lang/String;Lkotlin/jvm/functions/Function7;)Lapp/cash/sqldelight/Query;
+	public final fun listChunksByDocument (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun listChunksByDocument (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function7;)Lapp/cash/sqldelight/Query;
+	public final fun listCollections (Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun listCollections (Ljava/lang/String;Lkotlin/jvm/functions/Function8;)Lapp/cash/sqldelight/Query;
+	public final fun listDocuments (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun listDocuments (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function8;)Lapp/cash/sqldelight/Query;
+	public final fun listEmbeddingsForCollection (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun listEmbeddingsForCollection (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function5;)Lapp/cash/sqldelight/Query;
+	public final fun listJobs (Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+	public final fun listJobs (Ljava/lang/String;Lkotlin/jvm/functions/Function7;)Lapp/cash/sqldelight/Query;
+	public final fun purgeDocumentCascade (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun searchFtsLike (Ljava/lang/String;Ljava/lang/String;)Lapp/cash/sqldelight/Query;
+}
+
+public final class com/ragchat/sdk/storage/Schema_meta {
+	public fun <init> (JJ)V
+	public final fun component1 ()J
+	public final fun component2 ()J
+	public final fun copy (JJ)Lcom/ragchat/sdk/storage/Schema_meta;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/Schema_meta;JJILjava/lang/Object;)Lcom/ragchat/sdk/storage/Schema_meta;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getApplied_at ()J
+	public final fun getVersion ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/SqlDelightStorageRepository : com/ragchat/sdk/storage/StorageRepository {
+	public fun <init> (Lapp/cash/sqldelight/db/SqlDriver;Ljava/lang/String;)V
+	public fun <init> (Lcom/ragchat/sdk/storage/db/RagChatDatabase;Ljava/lang/String;)V
+	public fun appendAuditLog (Lcom/ragchat/sdk/storage/StoredAuditEntry;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun clearAll (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun clearScope (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun deleteCollection (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun deleteDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getChunk (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getCollection (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getEmbedding (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getJob (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getLatestAuditLog (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getScopeId ()Ljava/lang/String;
+	public fun listAuditLogs (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun listChunks (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun listCollections (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun listDocuments (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun listEmbeddingsForCollection (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun listJobs (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun purgeDocumentCascade (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun putChunks (Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun putCollection (Lcom/ragchat/sdk/api/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun putDocument (Lcom/ragchat/sdk/api/Document;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun putEmbedding (Ljava/lang/String;Lcom/ragchat/sdk/api/EmbeddingVector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun putJob (Lcom/ragchat/sdk/storage/StoredIngestionJob;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun searchLexical (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun transaction (Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/storage/StorageRepository {
+	public abstract fun appendAuditLog (Lcom/ragchat/sdk/storage/StoredAuditEntry;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun clearAll (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun clearScope (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun deleteCollection (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun deleteDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getChunk (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getCollection (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getEmbedding (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getJob (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getLatestAuditLog (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getScopeId ()Ljava/lang/String;
+	public abstract fun listAuditLogs (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun listChunks (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun listCollections (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun listDocuments (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun listEmbeddingsForCollection (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun listJobs (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun purgeDocumentCascade (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun putChunks (Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun putCollection (Lcom/ragchat/sdk/api/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun putDocument (Lcom/ragchat/sdk/api/Document;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun putEmbedding (Ljava/lang/String;Lcom/ragchat/sdk/api/EmbeddingVector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun putJob (Lcom/ragchat/sdk/storage/StoredIngestionJob;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun searchLexical (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun transaction (Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/storage/StoredAuditEntry {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Lkotlinx/datetime/Instant;
+	public final fun component7 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/lang/String;)Lcom/ragchat/sdk/storage/StoredAuditEntry;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/StoredAuditEntry;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/storage/StoredAuditEntry;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEventHash ()Ljava/lang/String;
+	public final fun getEventId ()Ljava/lang/String;
+	public final fun getEventType ()Ljava/lang/String;
+	public final fun getMetadataJson ()Ljava/lang/String;
+	public final fun getPrevHash ()Ljava/lang/String;
+	public final fun getScopeId ()Ljava/lang/String;
+	public final fun getTimestamp ()Lkotlinx/datetime/Instant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/storage/StoredIngestionJob {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;Lkotlinx/datetime/Instant;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()F
+	public final fun component6 ()Ljava/lang/String;
+	public final fun component7 ()Lkotlinx/datetime/Instant;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;Lkotlinx/datetime/Instant;)Lcom/ragchat/sdk/storage/StoredIngestionJob;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/storage/StoredIngestionJob;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;Lkotlinx/datetime/Instant;ILjava/lang/Object;)Lcom/ragchat/sdk/storage/StoredIngestionJob;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDocumentId ()Ljava/lang/String;
+	public final fun getErrorMessage ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getProgress ()F
+	public final fun getScopeId ()Ljava/lang/String;
+	public final fun getStatus ()Ljava/lang/String;
+	public final fun getUpdatedAt ()Lkotlinx/datetime/Instant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/ragchat/sdk/storage/db/RagChatDatabase : app/cash/sqldelight/Transacter {
+	public static final field Companion Lcom/ragchat/sdk/storage/db/RagChatDatabase$Companion;
+	public abstract fun getRagChatQueries ()Lcom/ragchat/sdk/storage/RagChatQueries;
+}
+
+public final class com/ragchat/sdk/storage/db/RagChatDatabase$Companion {
+	public final fun getSchema ()Lapp/cash/sqldelight/db/SqlSchema;
+	public final fun invoke (Lapp/cash/sqldelight/db/SqlDriver;)Lcom/ragchat/sdk/storage/db/RagChatDatabase;
 }
 

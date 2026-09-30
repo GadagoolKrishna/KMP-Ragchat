@@ -186,3 +186,18 @@ public abstract class com/ragchat/sdk/testing/VectorStoreContract {
 	public final fun verifyUpsertAndSearch (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 }
 
+public abstract class com/ragchat/sdk/testing/contract/EncryptionAtRestContractSuite {
+	public fun <init> ()V
+	public abstract fun createSecureStorage ()Lcom/ragchat/sdk/api/SecureStorage;
+	public final fun runStoreRetrieveDeleteTest ()V
+}
+
+public abstract class com/ragchat/sdk/testing/contract/StorageContractSuite {
+	public fun <init> ()V
+	public abstract fun createDriver ()Lapp/cash/sqldelight/db/SqlDriver;
+	public final fun runCryptoShreddingTest ()V
+	public final fun runPurgeCompletenessTest ()V
+	public final fun runQuantizedEmbeddingsTest ()V
+	public final fun runScopeIsolationTest ()V
+}
+

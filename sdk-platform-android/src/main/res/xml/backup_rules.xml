@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude internal databases, shared preferences, and encrypted files from cloud backups -->
+    <exclude domain="database" path="." />
+    <exclude domain="file" path="ragchat_storage" />
+    <exclude domain="sharedpref" path="ragchat_keys.xml" />
+</full-backup-content>
