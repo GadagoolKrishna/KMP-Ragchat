@@ -1,0 +1,7 @@
+public final class com/ragchat/sdk/core/RagOrchestrator {
+	public fun <init> (Lcom/ragchat/sdk/api/LlmProvider;Lcom/ragchat/sdk/api/EmbeddingProvider;Lcom/ragchat/sdk/api/VectorStore;Lcom/ragchat/sdk/governance/PiiRedactor;Lcom/ragchat/sdk/governance/PolicyEngine;Lcom/ragchat/sdk/api/RagChatConfig;)V
+	public synthetic fun <init> (Lcom/ragchat/sdk/api/LlmProvider;Lcom/ragchat/sdk/api/EmbeddingProvider;Lcom/ragchat/sdk/api/VectorStore;Lcom/ragchat/sdk/governance/PiiRedactor;Lcom/ragchat/sdk/governance/PolicyEngine;Lcom/ragchat/sdk/api/RagChatConfig;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun chat (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun chatStream (Ljava/lang/String;)Lkotlinx/coroutines/flow/Flow;
+}
+

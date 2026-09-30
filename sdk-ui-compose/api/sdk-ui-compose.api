@@ -1,0 +1,14 @@
+public final class com/ragchat/sdk/ui/compose/ChatScreenKt {
+	public static final fun ChatMessageItem (Lcom/ragchat/sdk/api/ChatMessage;Landroidx/compose/runtime/Composer;I)V
+	public static final fun ChatScreen (Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V
+}
+
+public final class com/ragchat/sdk/ui/compose/ComposableSingletons$ChatScreenKt {
+	public static final field INSTANCE Lcom/ragchat/sdk/ui/compose/ComposableSingletons$ChatScreenKt;
+	public static field lambda-1 Lkotlin/jvm/functions/Function2;
+	public static field lambda-2 Lkotlin/jvm/functions/Function3;
+	public fun <init> ()V
+	public final fun getLambda-1$sdk_ui_compose_release ()Lkotlin/jvm/functions/Function2;
+	public final fun getLambda-2$sdk_ui_compose_release ()Lkotlin/jvm/functions/Function3;
+}
+

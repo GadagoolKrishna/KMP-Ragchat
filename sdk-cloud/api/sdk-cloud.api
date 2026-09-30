@@ -1,0 +1,21 @@
+public final class com/ragchat/sdk/cloud/CloudEmbeddingProvider : com/ragchat/sdk/api/EmbeddingProvider {
+	public fun <init> (Lcom/ragchat/sdk/api/AuthProvider;Ljava/lang/String;II)V
+	public synthetic fun <init> (Lcom/ragchat/sdk/api/AuthProvider;Ljava/lang/String;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun embed (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun embedBatch (Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getDimensions ()I
+	public fun getId ()Ljava/lang/String;
+	public fun getMaxBatchSize ()I
+}
+
+public final class com/ragchat/sdk/cloud/CloudLlmProvider : com/ragchat/sdk/api/LlmProvider {
+	public fun <init> (Lcom/ragchat/sdk/api/AuthProvider;Lio/ktor/client/HttpClient;Ljava/lang/String;Lcom/ragchat/sdk/api/LlmCapabilities;)V
+	public synthetic fun <init> (Lcom/ragchat/sdk/api/AuthProvider;Lio/ktor/client/HttpClient;Ljava/lang/String;Lcom/ragchat/sdk/api/LlmCapabilities;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun checkAvailability (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun close (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun countTokens (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun generate (Ljava/lang/String;Lcom/ragchat/sdk/api/LlmOptions;)Lkotlinx/coroutines/flow/Flow;
+	public fun getCapabilities ()Lcom/ragchat/sdk/api/LlmCapabilities;
+	public fun getId ()Ljava/lang/String;
+}
+

@@ -1,0 +1,11 @@
+public final class com/ragchat/sdk/retrieval/ReciprocalRankFusion {
+	public static final field INSTANCE Lcom/ragchat/sdk/retrieval/ReciprocalRankFusion;
+	public final fun fuse (Ljava/util/List;Ljava/util/List;I)Ljava/util/List;
+	public static synthetic fun fuse$default (Lcom/ragchat/sdk/retrieval/ReciprocalRankFusion;Ljava/util/List;Ljava/util/List;IILjava/lang/Object;)Ljava/util/List;
+}
+
+public final class com/ragchat/sdk/retrieval/VectorSimilarity {
+	public static final field INSTANCE Lcom/ragchat/sdk/retrieval/VectorSimilarity;
+	public final fun cosineSimilarity (Lcom/ragchat/sdk/api/EmbeddingVector;Lcom/ragchat/sdk/api/EmbeddingVector;)F
+}
+

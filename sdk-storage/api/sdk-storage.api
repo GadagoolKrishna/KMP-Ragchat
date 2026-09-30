@@ -1,0 +1,7 @@
+public final class com/ragchat/sdk/storage/InMemoryDocumentStore : com/ragchat/sdk/api/DocumentStore {
+	public fun <init> ()V
+	public fun deleteDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun storeDocument (Lcom/ragchat/sdk/api/Document;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+

@@ -1,0 +1,38 @@
+public final class com/ragchat/sdk/governance/AuditHashChain {
+	public fun <init> ()V
+	public final fun getHistory ()Ljava/util/List;
+	public final fun logEvent (Ljava/lang/String;Ljava/lang/String;J)Lcom/ragchat/sdk/governance/AuditNode;
+}
+
+public final class com/ragchat/sdk/governance/AuditNode {
+	public fun <init> (JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()J
+	public final fun component2 ()J
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/lang/String;
+	public final fun copy (JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/ragchat/sdk/governance/AuditNode;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/governance/AuditNode;JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/governance/AuditNode;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCurrentHash ()Ljava/lang/String;
+	public final fun getEventType ()Ljava/lang/String;
+	public final fun getIndex ()J
+	public final fun getMetadataSummary ()Ljava/lang/String;
+	public final fun getPreviousHash ()Ljava/lang/String;
+	public final fun getTimestampMs ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/governance/PiiRedactor {
+	public fun <init> ()V
+	public final fun redact (Ljava/lang/String;)Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/governance/PolicyEngine {
+	public fun <init> ()V
+	public final fun validatePrompt (Ljava/lang/String;)Z
+	public final fun validateResponse (Ljava/lang/String;)Z
+}
+

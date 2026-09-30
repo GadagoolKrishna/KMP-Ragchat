@@ -1,0 +1,13 @@
+public abstract interface class com/ragchat/sdk/ingestion/DocumentChunker {
+	public abstract fun chunk (Lcom/ragchat/sdk/api/Document;)Ljava/util/List;
+}
+
+public final class com/ragchat/sdk/ingestion/FixedWindowChunker : com/ragchat/sdk/api/Chunker, com/ragchat/sdk/ingestion/DocumentChunker {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;II)V
+	public synthetic fun <init> (Ljava/lang/String;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun chunk (Lcom/ragchat/sdk/api/Document;)Ljava/util/List;
+	public fun chunk (Lcom/ragchat/sdk/api/Document;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getId ()Ljava/lang/String;
+}
+

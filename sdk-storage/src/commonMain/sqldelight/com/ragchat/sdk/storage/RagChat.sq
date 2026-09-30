@@ -1,0 +1,25 @@
+CREATE TABLE StoredDocument (
+    id TEXT PRIMARY KEY NOT NULL,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    metadataJson TEXT NOT NULL DEFAULT "{}"
+);
+
+CREATE TABLE StoredChunk (
+    id TEXT PRIMARY KEY NOT NULL,
+    documentId TEXT NOT NULL,
+    chunkIndex INTEGER NOT NULL,
+    content TEXT NOT NULL,
+    tokenCount INTEGER NOT NULL,
+    FOREIGN KEY(documentId) REFERENCES StoredDocument(id) ON DELETE CASCADE
+);
+
+selectAllDocuments:
+SELECT * FROM StoredDocument;
+
+insertDocument:
+INSERT OR REPLACE INTO StoredDocument(id, title, content, metadataJson)
+VALUES (?, ?, ?, ?);
+
+deleteDocument:
+DELETE FROM StoredDocument WHERE id = ?;

@@ -1,0 +1,1082 @@
+public final class com/ragchat/sdk/api/Answer {
+	public static final field Companion Lcom/ragchat/sdk/api/Answer$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Lcom/ragchat/sdk/api/FinishReason;Lcom/ragchat/sdk/api/TokenUsage;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/List;Lcom/ragchat/sdk/api/FinishReason;Lcom/ragchat/sdk/api/TokenUsage;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Lcom/ragchat/sdk/api/FinishReason;
+	public final fun component4 ()Lcom/ragchat/sdk/api/TokenUsage;
+	public final fun component5 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/util/List;Lcom/ragchat/sdk/api/FinishReason;Lcom/ragchat/sdk/api/TokenUsage;Ljava/util/Map;)Lcom/ragchat/sdk/api/Answer;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/Answer;Ljava/lang/String;Ljava/util/List;Lcom/ragchat/sdk/api/FinishReason;Lcom/ragchat/sdk/api/TokenUsage;Ljava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/Answer;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCitations ()Ljava/util/List;
+	public final fun getFinishReason ()Lcom/ragchat/sdk/api/FinishReason;
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getText ()Ljava/lang/String;
+	public final fun getUsage ()Lcom/ragchat/sdk/api/TokenUsage;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/Answer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/Answer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/Answer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/Answer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Answer$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/AuditSink {
+	public abstract fun recordEvent (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/api/AuthProvider {
+	public abstract fun getBearerToken (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun refreshToken (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/api/BackgroundScheduler {
+	public abstract fun cancelTask (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun schedulePeriodicTask (Ljava/lang/String;JLkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/api/ChatMessage {
+	public static final field Companion Lcom/ragchat/sdk/api/ChatMessage$Companion;
+	public fun <init> (Ljava/lang/String;Lcom/ragchat/sdk/api/ChatRole;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/util/List;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Lcom/ragchat/sdk/api/ChatRole;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/util/List;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Lcom/ragchat/sdk/api/ChatRole;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Lkotlinx/datetime/Instant;
+	public final fun component5 ()Ljava/util/List;
+	public final fun component6 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Lcom/ragchat/sdk/api/ChatRole;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/util/List;Ljava/util/Map;)Lcom/ragchat/sdk/api/ChatMessage;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ChatMessage;Ljava/lang/String;Lcom/ragchat/sdk/api/ChatRole;Ljava/lang/String;Lkotlinx/datetime/Instant;Ljava/util/List;Ljava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ChatMessage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCitations ()Ljava/util/List;
+	public final fun getContent ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getRole ()Lcom/ragchat/sdk/api/ChatRole;
+	public final fun getTimestamp ()Lkotlinx/datetime/Instant;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ChatMessage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ChatMessage$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ChatMessage;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ChatMessage;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ChatMessage$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ChatRole : java/lang/Enum {
+	public static final field ASSISTANT Lcom/ragchat/sdk/api/ChatRole;
+	public static final field Companion Lcom/ragchat/sdk/api/ChatRole$Companion;
+	public static final field SYSTEM Lcom/ragchat/sdk/api/ChatRole;
+	public static final field TOOL Lcom/ragchat/sdk/api/ChatRole;
+	public static final field USER Lcom/ragchat/sdk/api/ChatRole;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lcom/ragchat/sdk/api/ChatRole;
+	public static fun values ()[Lcom/ragchat/sdk/api/ChatRole;
+}
+
+public final class com/ragchat/sdk/api/ChatRole$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Chunk {
+	public static final field Companion Lcom/ragchat/sdk/api/Chunk$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()I
+	public final fun component5 ()I
+	public final fun component6 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/util/Map;)Lcom/ragchat/sdk/api/Chunk;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/Chunk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/Chunk;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChunkIndex ()I
+	public final fun getDocumentId ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getText ()Ljava/lang/String;
+	public final fun getTokenCount ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/Chunk$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/Chunk$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/Chunk;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/Chunk;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Chunk$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/Chunker {
+	public abstract fun chunk (Lcom/ragchat/sdk/api/Document;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getId ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/api/Citation {
+	public static final field Companion Lcom/ragchat/sdk/api/Citation$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()F
+	public final fun component6 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;)Lcom/ragchat/sdk/api/Citation;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/Citation;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/api/Citation;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChunkId ()Ljava/lang/String;
+	public final fun getDocumentId ()Ljava/lang/String;
+	public final fun getScore ()F
+	public final fun getSnippet ()Ljava/lang/String;
+	public final fun getSourceUri ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/Citation$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/Citation$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/Citation;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/Citation;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Citation$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Collection {
+	public static final field Companion Lcom/ragchat/sdk/api/Collection$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlinx/datetime/Instant;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlinx/datetime/Instant;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()I
+	public final fun component6 ()Lkotlinx/datetime/Instant;
+	public final fun component7 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlinx/datetime/Instant;Ljava/util/Map;)Lcom/ragchat/sdk/api/Collection;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/Collection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlinx/datetime/Instant;Ljava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/Collection;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCreatedAt ()Lkotlinx/datetime/Instant;
+	public final fun getEmbeddingDimensions ()I
+	public final fun getEmbeddingModelId ()Ljava/lang/String;
+	public final fun getEmbeddingModelVersion ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/Collection$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/Collection$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/Collection;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/Collection;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Collection$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ConfigKt {
+	public static final fun ragChatConfig (Lkotlin/jvm/functions/Function1;)Lcom/ragchat/sdk/api/RagChatConfig;
+}
+
+public abstract interface class com/ragchat/sdk/api/ConsentProvider {
+	public abstract fun hasConsent (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun requestConsent (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/api/Document {
+	public static final field Companion Lcom/ragchat/sdk/api/Document$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lkotlinx/datetime/Instant;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lkotlinx/datetime/Instant;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/util/Map;
+	public final fun component7 ()Lkotlinx/datetime/Instant;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lkotlinx/datetime/Instant;)Lcom/ragchat/sdk/api/Document;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lkotlinx/datetime/Instant;ILjava/lang/Object;)Lcom/ragchat/sdk/api/Document;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCollectionId ()Ljava/lang/String;
+	public final fun getContent ()Ljava/lang/String;
+	public final fun getCreatedAt ()Lkotlinx/datetime/Instant;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getSourceUri ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/Document$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/Document$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/Document;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/Document;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/Document$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/DocumentParser {
+	public abstract fun getSupportedMimeTypes ()Ljava/util/Set;
+	public abstract fun parse (Lcom/ragchat/sdk/api/FileAccess;)Lkotlinx/coroutines/flow/Flow;
+}
+
+public abstract interface class com/ragchat/sdk/api/DocumentStore {
+	public abstract fun deleteDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDocument (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun storeDocument (Lcom/ragchat/sdk/api/Document;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/api/EmbeddingProvider {
+	public abstract fun embed (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun embedBatch (Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDimensions ()I
+	public abstract fun getId ()Ljava/lang/String;
+	public abstract fun getMaxBatchSize ()I
+}
+
+public final class com/ragchat/sdk/api/EmbeddingVector {
+	public static final field Companion Lcom/ragchat/sdk/api/EmbeddingVector$Companion;
+	public fun <init> (ILjava/util/List;)V
+	public final fun component1 ()I
+	public final fun component2 ()Ljava/util/List;
+	public final fun copy (ILjava/util/List;)Lcom/ragchat/sdk/api/EmbeddingVector;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/EmbeddingVector;ILjava/util/List;ILjava/lang/Object;)Lcom/ragchat/sdk/api/EmbeddingVector;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDimensions ()I
+	public final fun getValues ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/EmbeddingVector$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/EmbeddingVector$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/EmbeddingVector;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/EmbeddingVector;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/EmbeddingVector$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/FileAccess {
+	public abstract fun getMimeType ()Ljava/lang/String;
+	public abstract fun getPath ()Ljava/lang/String;
+	public abstract fun getSizeBytes ()J
+	public abstract fun openByteStream ()Lkotlinx/coroutines/flow/Flow;
+	public abstract fun readBytes (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/api/FinishReason : java/lang/Enum {
+	public static final field CONTENT_FILTER Lcom/ragchat/sdk/api/FinishReason;
+	public static final field Companion Lcom/ragchat/sdk/api/FinishReason$Companion;
+	public static final field ERROR Lcom/ragchat/sdk/api/FinishReason;
+	public static final field LENGTH Lcom/ragchat/sdk/api/FinishReason;
+	public static final field STOP Lcom/ragchat/sdk/api/FinishReason;
+	public static final field TOOL_CALL Lcom/ragchat/sdk/api/FinishReason;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lcom/ragchat/sdk/api/FinishReason;
+	public static fun values ()[Lcom/ragchat/sdk/api/FinishReason;
+}
+
+public final class com/ragchat/sdk/api/FinishReason$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/KeyProvider {
+	public abstract fun getEncryptionKey (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun rotateKey (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/api/LlmCapabilities {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmCapabilities$Companion;
+	public fun <init> (IZZZ)V
+	public final fun component1 ()I
+	public final fun component2 ()Z
+	public final fun component3 ()Z
+	public final fun component4 ()Z
+	public final fun copy (IZZZ)Lcom/ragchat/sdk/api/LlmCapabilities;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/LlmCapabilities;IZZZILjava/lang/Object;)Lcom/ragchat/sdk/api/LlmCapabilities;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getContextWindowTokens ()I
+	public final fun getSupportsStreaming ()Z
+	public final fun getSupportsToolCalling ()Z
+	public fun hashCode ()I
+	public final fun isLocal ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/LlmCapabilities$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/LlmCapabilities$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/LlmCapabilities;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/LlmCapabilities;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmCapabilities$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/LlmEvent {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmEvent$Companion;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Completed : com/ragchat/sdk/api/LlmEvent {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmEvent$Completed$Companion;
+	public fun <init> (Lcom/ragchat/sdk/api/Answer;)V
+	public final fun component1 ()Lcom/ragchat/sdk/api/Answer;
+	public final fun copy (Lcom/ragchat/sdk/api/Answer;)Lcom/ragchat/sdk/api/LlmEvent$Completed;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/LlmEvent$Completed;Lcom/ragchat/sdk/api/Answer;ILjava/lang/Object;)Lcom/ragchat/sdk/api/LlmEvent$Completed;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAnswer ()Lcom/ragchat/sdk/api/Answer;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/LlmEvent$Completed$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/LlmEvent$Completed$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/LlmEvent$Completed;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/LlmEvent$Completed;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Completed$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Error : com/ragchat/sdk/api/LlmEvent {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmEvent$Error$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/ragchat/sdk/api/LlmEvent$Error;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/LlmEvent$Error;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/api/LlmEvent$Error;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/LlmEvent$Error$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/LlmEvent$Error$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/LlmEvent$Error;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/LlmEvent$Error;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Error$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Token : com/ragchat/sdk/api/LlmEvent {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmEvent$Token$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/ragchat/sdk/api/LlmEvent$Token;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/LlmEvent$Token;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/api/LlmEvent$Token;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/LlmEvent$Token$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/LlmEvent$Token$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/LlmEvent$Token;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/LlmEvent$Token;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Token$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Usage : com/ragchat/sdk/api/LlmEvent {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmEvent$Usage$Companion;
+	public fun <init> (Lcom/ragchat/sdk/api/TokenUsage;)V
+	public final fun component1 ()Lcom/ragchat/sdk/api/TokenUsage;
+	public final fun copy (Lcom/ragchat/sdk/api/TokenUsage;)Lcom/ragchat/sdk/api/LlmEvent$Usage;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/LlmEvent$Usage;Lcom/ragchat/sdk/api/TokenUsage;ILjava/lang/Object;)Lcom/ragchat/sdk/api/LlmEvent$Usage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getUsage ()Lcom/ragchat/sdk/api/TokenUsage;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/LlmEvent$Usage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/LlmEvent$Usage$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/LlmEvent$Usage;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/LlmEvent$Usage;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmEvent$Usage$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmOptions {
+	public static final field Companion Lcom/ragchat/sdk/api/LlmOptions$Companion;
+	public fun <init> ()V
+	public fun <init> (FILjava/util/List;)V
+	public synthetic fun <init> (FILjava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()F
+	public final fun component2 ()I
+	public final fun component3 ()Ljava/util/List;
+	public final fun copy (FILjava/util/List;)Lcom/ragchat/sdk/api/LlmOptions;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/LlmOptions;FILjava/util/List;ILjava/lang/Object;)Lcom/ragchat/sdk/api/LlmOptions;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMaxOutputTokens ()I
+	public final fun getStopSequences ()Ljava/util/List;
+	public final fun getTemperature ()F
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/LlmOptions$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/LlmOptions$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/LlmOptions;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/LlmOptions;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/LlmOptions$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/LlmProvider {
+	public abstract fun checkAvailability (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun close (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun countTokens (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun generate (Ljava/lang/String;Lcom/ragchat/sdk/api/LlmOptions;)Lkotlinx/coroutines/flow/Flow;
+	public abstract fun getCapabilities ()Lcom/ragchat/sdk/api/LlmCapabilities;
+	public abstract fun getId ()Ljava/lang/String;
+}
+
+public abstract interface class com/ragchat/sdk/api/Logger {
+	public abstract fun debug (Ljava/lang/String;Ljava/lang/String;)V
+	public abstract fun error (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public abstract fun info (Ljava/lang/String;Ljava/lang/String;)V
+	public abstract fun warn (Ljava/lang/String;Ljava/lang/String;)V
+}
+
+public final class com/ragchat/sdk/api/Logger$DefaultImpls {
+	public static synthetic fun error$default (Lcom/ragchat/sdk/api/Logger;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILjava/lang/Object;)V
+}
+
+public final class com/ragchat/sdk/api/ModelAvailability {
+	public static final field Companion Lcom/ragchat/sdk/api/ModelAvailability$Companion;
+	public fun <init> (ZLjava/lang/String;)V
+	public synthetic fun <init> (ZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Z
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (ZLjava/lang/String;)Lcom/ragchat/sdk/api/ModelAvailability;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ModelAvailability;ZLjava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ModelAvailability;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getReason ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isAvailable ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ModelAvailability$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ModelAvailability$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ModelAvailability;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ModelAvailability;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ModelAvailability$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ModelRoutingMode : java/lang/Enum {
+	public static final field AUTO Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public static final field CLOUD_FIRST Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public static final field CLOUD_ONLY Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public static final field Companion Lcom/ragchat/sdk/api/ModelRoutingMode$Companion;
+	public static final field LOCAL_FIRST Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public static final field LOCAL_ONLY Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public static fun values ()[Lcom/ragchat/sdk/api/ModelRoutingMode;
+}
+
+public final class com/ragchat/sdk/api/ModelRoutingMode$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/ModelSource {
+	public abstract fun getModelPath (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getSourceId ()Ljava/lang/String;
+	public abstract fun isModelDownloaded (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/api/ParsedElement {
+	public static final field Companion Lcom/ragchat/sdk/api/ParsedElement$Companion;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Heading : com/ragchat/sdk/api/ParsedElement {
+	public static final field Companion Lcom/ragchat/sdk/api/ParsedElement$Heading$Companion;
+	public fun <init> (Ljava/lang/String;ILjava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;ILjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;ILjava/util/Map;)Lcom/ragchat/sdk/api/ParsedElement$Heading;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ParsedElement$Heading;Ljava/lang/String;ILjava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ParsedElement$Heading;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getLevel ()I
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ParsedElement$Heading$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ParsedElement$Heading$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ParsedElement$Heading;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ParsedElement$Heading;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Heading$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$ImageRef : com/ragchat/sdk/api/ParsedElement {
+	public static final field Companion Lcom/ragchat/sdk/api/ParsedElement$ImageRef$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lcom/ragchat/sdk/api/ParsedElement$ImageRef;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ParsedElement$ImageRef;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ParsedElement$ImageRef;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAltText ()Ljava/lang/String;
+	public final fun getMetadata ()Ljava/util/Map;
+	public final fun getUri ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ParsedElement$ImageRef$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ParsedElement$ImageRef$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ParsedElement$ImageRef;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ParsedElement$ImageRef;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$ImageRef$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Metadata : com/ragchat/sdk/api/ParsedElement {
+	public static final field Companion Lcom/ragchat/sdk/api/ParsedElement$Metadata$Companion;
+	public fun <init> (Ljava/util/Map;)V
+	public final fun component1 ()Ljava/util/Map;
+	public final fun copy (Ljava/util/Map;)Lcom/ragchat/sdk/api/ParsedElement$Metadata;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ParsedElement$Metadata;Ljava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ParsedElement$Metadata;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAttributes ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ParsedElement$Metadata$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ParsedElement$Metadata$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ParsedElement$Metadata;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ParsedElement$Metadata;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Metadata$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Table : com/ragchat/sdk/api/ParsedElement {
+	public static final field Companion Lcom/ragchat/sdk/api/ParsedElement$Table$Companion;
+	public fun <init> (Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/util/List;Ljava/util/List;Ljava/lang/String;)Lcom/ragchat/sdk/api/ParsedElement$Table;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ParsedElement$Table;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ParsedElement$Table;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCaption ()Ljava/lang/String;
+	public final fun getHeaders ()Ljava/util/List;
+	public final fun getRows ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ParsedElement$Table$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ParsedElement$Table$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ParsedElement$Table;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ParsedElement$Table;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Table$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Text : com/ragchat/sdk/api/ParsedElement {
+	public static final field Companion Lcom/ragchat/sdk/api/ParsedElement$Text$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/Map;
+	public final fun copy (Ljava/lang/String;Ljava/util/Map;)Lcom/ragchat/sdk/api/ParsedElement$Text;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/ParsedElement$Text;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Lcom/ragchat/sdk/api/ParsedElement$Text;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getContent ()Ljava/lang/String;
+	public final fun getMetadata ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/ParsedElement$Text$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/ParsedElement$Text$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/ParsedElement$Text;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/ParsedElement$Text;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/ParsedElement$Text$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/PiiRedactor {
+	public abstract fun redact (Ljava/lang/String;)Lcom/ragchat/sdk/api/RedactionResult;
+}
+
+public final class com/ragchat/sdk/api/PolicyDecision {
+	public static final field Companion Lcom/ragchat/sdk/api/PolicyDecision$Companion;
+	public fun <init> (ZLjava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (ZLjava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Z
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (ZLjava/lang/String;Ljava/lang/String;)Lcom/ragchat/sdk/api/PolicyDecision;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/PolicyDecision;ZLjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/ragchat/sdk/api/PolicyDecision;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getReason ()Ljava/lang/String;
+	public final fun getViolatedRule ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isAllowed ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/PolicyDecision$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/PolicyDecision$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/PolicyDecision;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/PolicyDecision;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/PolicyDecision$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/PolicyProvider {
+	public abstract fun evaluateInput (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun evaluateOutput (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/api/PromptTemplate {
+	public abstract fun format (Ljava/util/Map;Ljava/util/List;)Ljava/lang/String;
+	public abstract fun getTemplateId ()Ljava/lang/String;
+}
+
+public abstract interface class com/ragchat/sdk/api/QueryRewriter {
+	public abstract fun rewrite (Ljava/util/List;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/api/RagChatConfig {
+	public static final field Companion Lcom/ragchat/sdk/api/RagChatConfig$Companion;
+	public static final field SDK_VERSION Ljava/lang/String;
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;IIFLcom/ragchat/sdk/api/ModelRoutingMode;ZZ)V
+	public synthetic fun <init> (Ljava/lang/String;IIFLcom/ragchat/sdk/api/ModelRoutingMode;ZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()F
+	public final fun component5 ()Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public final fun component6 ()Z
+	public final fun component7 ()Z
+	public final fun copy (Ljava/lang/String;IIFLcom/ragchat/sdk/api/ModelRoutingMode;ZZ)Lcom/ragchat/sdk/api/RagChatConfig;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/RagChatConfig;Ljava/lang/String;IIFLcom/ragchat/sdk/api/ModelRoutingMode;ZZILjava/lang/Object;)Lcom/ragchat/sdk/api/RagChatConfig;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAppPrivateDirectory ()Ljava/lang/String;
+	public final fun getEnableAuditChain ()Z
+	public final fun getEnablePiiRedaction ()Z
+	public final fun getHybridLexicalWeight ()F
+	public final fun getMaxContextTokens ()I
+	public final fun getRoutingMode ()Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public final fun getTopKRetrieval ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/RagChatConfig$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/RagChatConfig$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/RagChatConfig;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/RagChatConfig;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/RagChatConfig$Companion {
+	public final fun defaultOptions ()Lcom/ragchat/sdk/api/RagChatOptions;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/RagChatConfigBuilder {
+	public fun <init> ()V
+	public final fun build ()Lcom/ragchat/sdk/api/RagChatConfig;
+	public final fun getAppPrivateDirectory ()Ljava/lang/String;
+	public final fun getEnableAuditChain ()Z
+	public final fun getEnablePiiRedaction ()Z
+	public final fun getHybridLexicalWeight ()F
+	public final fun getMaxContextTokens ()I
+	public final fun getRoutingMode ()Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public final fun getTopKRetrieval ()I
+	public final fun setAppPrivateDirectory (Ljava/lang/String;)V
+	public final fun setEnableAuditChain (Z)V
+	public final fun setEnablePiiRedaction (Z)V
+	public final fun setHybridLexicalWeight (F)V
+	public final fun setMaxContextTokens (I)V
+	public final fun setRoutingMode (Lcom/ragchat/sdk/api/ModelRoutingMode;)V
+	public final fun setTopKRetrieval (I)V
+}
+
+public final class com/ragchat/sdk/api/RagChatOptions {
+	public fun <init> ()V
+	public final fun getAppPrivateDirectory ()Ljava/lang/String;
+	public final fun getEnableAuditChain ()Z
+	public final fun getEnablePiiRedaction ()Z
+	public final fun getHybridLexicalWeight ()F
+	public final fun getMaxContextTokens ()I
+	public final fun getRoutingMode ()Lcom/ragchat/sdk/api/ModelRoutingMode;
+	public final fun getTopKRetrieval ()I
+	public final fun setAppPrivateDirectory (Ljava/lang/String;)V
+	public final fun setEnableAuditChain (Z)V
+	public final fun setEnablePiiRedaction (Z)V
+	public final fun setHybridLexicalWeight (F)V
+	public final fun setMaxContextTokens (I)V
+	public final fun setRoutingMode (Lcom/ragchat/sdk/api/ModelRoutingMode;)V
+	public final fun setTopKRetrieval (I)V
+	public final fun toConfig ()Lcom/ragchat/sdk/api/RagChatConfig;
+}
+
+public final class com/ragchat/sdk/api/RedactionResult {
+	public static final field Companion Lcom/ragchat/sdk/api/RedactionResult$Companion;
+	public fun <init> (Ljava/lang/String;ILjava/util/Set;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()Ljava/util/Set;
+	public final fun copy (Ljava/lang/String;ILjava/util/Set;)Lcom/ragchat/sdk/api/RedactionResult;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/RedactionResult;Ljava/lang/String;ILjava/util/Set;ILjava/lang/Object;)Lcom/ragchat/sdk/api/RedactionResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDetectedTypes ()Ljava/util/Set;
+	public final fun getRedactedText ()Ljava/lang/String;
+	public final fun getRedactionCount ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/RedactionResult$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/RedactionResult$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/RedactionResult;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/RedactionResult;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/RedactionResult$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/Reranker {
+	public abstract fun rerank (Ljava/lang/String;Ljava/util/List;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract class com/ragchat/sdk/api/SdkError : java/lang/Exception {
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getCause ()Ljava/lang/Throwable;
+	public fun getMessage ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/api/SdkError$AuthError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class com/ragchat/sdk/api/SdkError$ConsentRequiredError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun getConsentType ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/api/SdkError$DocumentParsingError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getFormat ()Ljava/lang/String;
+	public final fun getSourceUri ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/api/SdkError$EmbeddingError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getModelId ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/api/SdkError$InferenceError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getModelId ()Ljava/lang/String;
+	public final fun getStatusCode ()Ljava/lang/Integer;
+}
+
+public final class com/ragchat/sdk/api/SdkError$InitializationError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class com/ragchat/sdk/api/SdkError$ModelUnavailableError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;ZLjava/lang/String;)V
+	public final fun getModelId ()Ljava/lang/String;
+	public final fun getReason ()Ljava/lang/String;
+	public final fun isLocal ()Z
+}
+
+public final class com/ragchat/sdk/api/SdkError$NetworkError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getStatusCode ()Ljava/lang/Integer;
+}
+
+public final class com/ragchat/sdk/api/SdkError$PolicyViolationError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Z)V
+	public final fun getReason ()Ljava/lang/String;
+	public final fun getRuleId ()Ljava/lang/String;
+	public final fun isBlocked ()Z
+}
+
+public final class com/ragchat/sdk/api/SdkError$StorageError : com/ragchat/sdk/api/SdkError {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getOperation ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/api/SearchResult {
+	public static final field Companion Lcom/ragchat/sdk/api/SearchResult$Companion;
+	public fun <init> (Lcom/ragchat/sdk/api/Chunk;F)V
+	public final fun component1 ()Lcom/ragchat/sdk/api/Chunk;
+	public final fun component2 ()F
+	public final fun copy (Lcom/ragchat/sdk/api/Chunk;F)Lcom/ragchat/sdk/api/SearchResult;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/SearchResult;Lcom/ragchat/sdk/api/Chunk;FILjava/lang/Object;)Lcom/ragchat/sdk/api/SearchResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChunk ()Lcom/ragchat/sdk/api/Chunk;
+	public final fun getScore ()F
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/SearchResult$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/SearchResult$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/SearchResult;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/SearchResult;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/SearchResult$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/SecureStorage {
+	public abstract fun remove (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun retrieve (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun store (Ljava/lang/String;[BLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/ragchat/sdk/api/TelemetrySink {
+	public abstract fun recordCounter (Ljava/lang/String;JLjava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun recordLatency (Ljava/lang/String;JLjava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/ragchat/sdk/api/TokenUsage {
+	public static final field Companion Lcom/ragchat/sdk/api/TokenUsage$Companion;
+	public fun <init> (III)V
+	public synthetic fun <init> (IIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()I
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun copy (III)Lcom/ragchat/sdk/api/TokenUsage;
+	public static synthetic fun copy$default (Lcom/ragchat/sdk/api/TokenUsage;IIIILjava/lang/Object;)Lcom/ragchat/sdk/api/TokenUsage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCompletionTokens ()I
+	public final fun getPromptTokens ()I
+	public final fun getTotalTokens ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/ragchat/sdk/api/TokenUsage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/ragchat/sdk/api/TokenUsage$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/ragchat/sdk/api/TokenUsage;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/ragchat/sdk/api/TokenUsage;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/ragchat/sdk/api/TokenUsage$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/ragchat/sdk/api/VectorStore {
+	public abstract fun clear (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun delete (Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun search (Ljava/lang/String;Lcom/ragchat/sdk/api/EmbeddingVector;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun upsert (Ljava/lang/String;Lcom/ragchat/sdk/api/Chunk;Lcom/ragchat/sdk/api/EmbeddingVector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun upsertBatch (Ljava/lang/String;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+

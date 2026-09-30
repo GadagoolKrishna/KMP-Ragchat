@@ -1,0 +1,19 @@
+public final class com/ragchat/sdk/platform/ios/AppleFoundationModelsProvider : com/ragchat/sdk/api/LlmProvider {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;Lcom/ragchat/sdk/api/LlmCapabilities;)V
+	public synthetic fun <init> (Ljava/lang/String;Lcom/ragchat/sdk/api/LlmCapabilities;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun checkAvailability (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun close (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun countTokens (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun generate (Ljava/lang/String;Lcom/ragchat/sdk/api/LlmOptions;)Lkotlinx/coroutines/flow/Flow;
+	public fun getCapabilities ()Lcom/ragchat/sdk/api/LlmCapabilities;
+	public fun getId ()Ljava/lang/String;
+}
+
+public final class com/ragchat/sdk/platform/ios/IosSecureStorage : com/ragchat/sdk/api/SecureStorage {
+	public fun <init> ()V
+	public fun remove (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun retrieve (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun store (Ljava/lang/String;[BLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
